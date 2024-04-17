@@ -16,15 +16,16 @@ const SignIn = () => {
       if (!user.email || !user.password) {
         navigate("/signin");
       }
-      const getuser = await JSON.parse(sessionStorage.getItem("user"));
-      if (!getuser) {
-        navigate("/create-account");
-      }
-      if (user.email === getuser.email && user.password === getuser.password) {
-        console.log("verified");
-        navigate("/goals");
-        return;
-      }
+      // const getuser = await JSON.parse(sessionStorage.getItem("user"));
+      // if (!getuser) {
+      //   navigate("/create-account");
+      // }
+      // if (user.email === getuser.email && user.password === getuser.password) {
+      //   console.log("verified");
+      //   navigate("/goals");
+      //   return;
+      // }
+      navigate("/goals");
     } catch (error) {
       console.log(error);
     }
@@ -81,7 +82,7 @@ const SignIn = () => {
           <p className="text-sm">
             Don’t have an account yet?
             <span
-              onClick={() => navigate("/signin")}
+              onClick={() => navigate("/create-account")}
               className="text-[#89A1FF] cursor-pointer hover:underline"
             >
               Create an account
