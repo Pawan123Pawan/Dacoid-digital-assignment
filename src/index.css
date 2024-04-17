@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+.button-color {
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    #e8e6ff,
+    #cdcdff,
+    #afb7ff,
+    #89a1ff
+  );
+}
+.myborder {
+  border: 2px solid;
+  border-top-color: #ffffff;
+  border-left-color: #ffffff;
+  border-bottom-color: #89a1ff;
+  border-right-color: #89a1ff;
+}
+
+.mybutton {
+  background-image: linear-gradient(
+    to right,
+    #95beff,
+    #90b7ff,
+    #8cb0ff,
+    #8aa9ff,
+    #89a1ff
+  );
+  padding: 10px;
+  font-weight: 500;
+}
+
+.warning {
+  background: linear-gradient(
+    90.07deg,
+    rgba(129, 157, 255, 0.28) 5.94%,
+    rgba(16, 16, 16, 0) 76.45%
+  );
+}
+
+
+.custom-switch {
+  background-color: #8099ff;
+  border-radius: 20px;
+  width: 35px;
+}
+.custom-switch:hover{
+  background-color: #8099ff;
+} 
+.custom-switch.checked {
+  background-color:#c8c8c8;
+}
