@@ -34,4 +34,4 @@ To install and run this project, follow these steps:
 
 ## Deploy Link
 
-[Live Project link](https://educase-assignment-pawan.vercel.app/)
+[Live Project link](https://dacoid-digital-assignment-pawan.vercel.app/)
